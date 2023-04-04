@@ -2,7 +2,7 @@ import axios from "axios"
 
 
 export const makeMultiRequest = axios.create({
-    baseURL: "http://localhost:8800/api",
+    baseURL: process.env.REACT_APP_API_REQUEST_URL,
     headers: {
       'content-type': 'multipart/form-data',
     },
